@@ -1,0 +1,113 @@
+/*removing default padding and margin  */
+*{
+    margin:0;
+    padding:0;
+}
+
+
+
+/* adiing background to the house image */
+.house{
+  display: flex;
+  flex-direction: column;
+  padding:3px 22px;
+  justify-content: center;
+  align-items: center;
+  height: 700px;
+  padding-top: -400px;
+  
+}
+
+.house::before{
+  content: "";
+  background:linear-gradient(rgba(4,9,30,0.8),rgba(4,9,30,0.8)),url(house.avif) no-repeat center center/cover;
+  top:0px;
+  left:0px;
+  height: 100vh;
+  width:100%;
+  position: fixed;
+  /* filter: brightness(50%); */
+  z-index: -1;
+  
+}
+
+
+
+/* navbar */
+#nav-bar{
+
+height:40px;
+width:100vw;
+background-color:white;
+opacity:.7;
+display: flex;
+align-items: center;
+justify-content: center;
+gap:30px;
+padding:10px;
+position:fixed;
+
+}
+/* nav bar end */
+
+
+/* home section start */
+.home{
+  height:100px;
+  width:12%;
+  display: flex;
+  padding-left: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.z{
+color: black;}
+
+/* home section end */
+
+
+/* work section */
+.work{
+  width:12%;
+  display: flex;
+  padding-left: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+/* work section end */
+/* about us section */
+.about-us{
+  width:12%;
+  display: flex;
+  padding-left: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+/* about us section end */
+
+/* blog section start */
+.blog{
+  width:12%;
+  display: flex;
+  padding-left: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+/* blog section end */
+@media (max-width:700px){
+  
+  
+#nav-bar{
+  bottom: 0;
+  background-color:aliceblue;
+}
+}
